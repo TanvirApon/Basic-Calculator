@@ -5,13 +5,14 @@ function checker(first,second){
 
     console.log("Checker Function has been clicked");
 
-    if(isNaN(first) || isNaN(second))
-        {  
-            document.getElementById("fnumber").value=" ";
-            document.getElementById("snumber").value=" ";
-            document.getElementById("result").value=" ";
-            alert("You have Used String instead of number!!!")
-        }
+    // check if the input is valid or not
+    if(isNaN(first) || isNaN(second)){  
+        document.getElementById("f_number").value=" ";
+        document.getElementById("s_number").value=" ";
+        document.getElementById("result").value=" ";
+        alert("Invalid input");
+    }
+ 
 }
 
 
@@ -19,8 +20,8 @@ function add(){
     
     console.log("add function clicked");
 
-    const first=parseFloat(document.getElementById("fnumber").value);
-    const second=parseFloat(document.getElementById("snumber").value);
+    const first=parseFloat(document.getElementById("f_number").value);
+    const second=parseFloat(document.getElementById("s_number").value);
 
     checker(first,second);
 
@@ -33,8 +34,8 @@ function add(){
 function minus(){
      
     console.log("Minus function clicked");
-    const first=parseFloat(document.getElementById("fnumber").value);
-    const second=parseFloat(document.getElementById("snumber").value);
+    const first=parseFloat(document.getElementById("f_number").value);
+    const second=parseFloat(document.getElementById("s_number").value);
 
     checker(first,second);
 
@@ -45,12 +46,12 @@ function minus(){
 }
 
 
-function mul(){
+function multiplication(){
      
     console.log("mul function clicked");
 
-    const first=parseFloatt(document.getElementById("fnumber").value);
-    const second=parseFloat(document.getElementById("snumber").value);
+    const first=parseFloat(document.getElementById("f_number").value);
+    const second=parseFloat(document.getElementById("s_number").value);
 
     checker(first,second);
 
@@ -63,8 +64,8 @@ function divison(){
      
     console.log("divison function clicked");
 
-    const first=parseFloat(document.getElementById("fnumber").value);
-    const second=parseFloat(document.getElementById("snumber").value);
+    const first=parseFloat(document.getElementById("f_number").value);
+    const second=parseFloat(document.getElementById("s_number").value);
 
     checker(first,second);
 
@@ -76,11 +77,11 @@ function divison(){
  
 
 
-function rem(){
+function clear_all(){
     console.log("Clear has been clicked");
 
-    document.getElementById("fnumber").value=" ";
-    document.getElementById("snumber").value=" ";
+    document.getElementById("f_number").value=" ";
+    document.getElementById("s_number").value=" ";
     document.getElementById("result").value=" ";
 }
  

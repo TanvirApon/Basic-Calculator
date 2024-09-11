@@ -11,28 +11,23 @@
    
 <div class="calculator"> 
      <label>Enter the First Number:</label>
-     <input type="text" id="fnumber">
+     <input type="text" id="f_number">
 
      <label>Enter the Second Number:</label>
-     <input type="text" id="snumber">
+     <input type="text" id="s_number">
 
-
-     <div class="button clearfix">
-        <button class="plus btn" onclick="add();">+</button>
-        <button class="minus btn" onclick="minus();">-</button>
-        <button class="mul btn" onclick="mul();">*</button>
-        <button class="divison btn" onclick="divison();">/</button>
+     <div class="btn">
+        <button class="button" onclick="add();">+</button>
+        <button class="button" onclick="minus();">-</button>
+        <button class="button" onclick="multiplication();">*</button>
+        <button class="button" onclick="divison();">/</button>
     </div>
 
     <label>Result</label>
     <input type="text" id="result">
 
-    <button onclick="rem();">CLEAR</button>
-
-
-
+    <button onclick="clear_all();">CLEAR</button>
 </div>
-
 
 <script src="app.js"></script>
 </body>
