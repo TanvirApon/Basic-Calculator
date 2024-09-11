@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   
+<div class="calculator"> 
+     <label>Enter the First Number:</label>
+     <input type="text" id="fnumber">
+
+     <label>Enter the Second Number:</label>
+     <input type="text" id="snumber">
+
+
+     <div class="button clearfix">
+        <button class="plus btn" onclick="add();">+</button>
+        <button class="minus btn" onclick="minus();">-</button>
+        <button class="mul btn" onclick="mul();">*</button>
+        <button class="divison btn" onclick="divison();">/</button>
+    </div>
+
+    <label>Result</label>
+    <input type="text" id="result">
+
+    <button onclick="rem();">CLEAR</button>
+
+
+
+</div>
+
+
+<script src="app.js"></script>
+</body>
+</html>
