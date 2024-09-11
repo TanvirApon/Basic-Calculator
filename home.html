@@ -9,14 +9,14 @@
 </head>
 <body>
    
-<div class="calculator"> 
+<div class="container"> 
      <label>Enter the First Number:</label>
-     <input type="text" id="f_number">
+     <input type="text" id="first_number">
 
      <label>Enter the Second Number:</label>
-     <input type="text" id="s_number">
+     <input type="text" id="second_number">
 
-     <div class="btn">
+     <div >
         <button class="button" onclick="add();">+</button>
         <button class="button" onclick="minus();">-</button>
         <button class="button" onclick="multiplication();">*</button>
@@ -24,7 +24,7 @@
     </div>
 
     <label>Result</label>
-    <input type="text" id="result">
+    <input type="text" id="result" readonly>
 
     <button onclick="clear_all();">CLEAR</button>
 </div>
