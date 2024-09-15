@@ -2,12 +2,12 @@ console.log("Javascipt Code has been added");
 
 let first, second;
 
-function checker(num1,num2){
+function checker(){
     console.log("Checker Function has been clicked");
 
     first = parseFloat(document.getElementById("first_number").value);
     second = parseFloat(document.getElementById("second_number").value);
-
+    
     // check if the input is valid or not
     if(isNaN(first) || isNaN(second)){  
         document.getElementById("first_number").value = " ";
