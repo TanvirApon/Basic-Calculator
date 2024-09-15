@@ -7,12 +7,12 @@ function checker(){
 
     first = parseFloat(document.getElementById("first_number").value);
     second = parseFloat(document.getElementById("second_number").value);
-    
+
     // check if the input is valid or not
     if(isNaN(first) || isNaN(second)){  
-        document.getElementById("first_number").value = " ";
-        document.getElementById("second_number").value = " ";
-        document.getElementById("result").value = " ";
+        document.getElementById("first_number").value="";
+        document.getElementById("second_number").value="";
+        document.getElementById("result").value="";
         alert("Invalid input");
     }
 }
@@ -64,8 +64,8 @@ function divison(){
 function clear_all(){
     console.log("Clear has been clicked");
 
-    document.getElementById("first_number").value = "";
-    document.getElementById("second_number").value = "";
-    document.getElementById("result").value = "";
+    document.getElementById("first_number").value="";
+    document.getElementById("second_number").value="";
+    document.getElementById("result").value="";
 }
  
