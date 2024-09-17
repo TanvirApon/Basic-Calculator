@@ -1,51 +1,55 @@
 console.log("Javascipt Code has been added");
 
-function calculator(inputValue){
- 
+function calculator(Value){
     //variables
     let first = parseFloat(document.getElementById("first_number").value);
     let second = parseFloat(document.getElementById("second_number").value);
     let result;
 
-    console.log(inputValue);
-   
-
-    //check is input is valid or not
+    // //check is input is valid or not
     if(isNaN(first) || isNaN(second)){  
         document.getElementById("first_number").value="";
         document.getElementById("second_number").value="";
         document.getElementById("result").value="";
         alert("Invalid input");
-        return false;
+        return;
     }
-
-    else if(inputValue == "+"){
-        console.log("Plus Clicked");
-        result = parseFloat(first + second);
+    else if(Value == "+"){
+        result = addition(first,second);
     }
-    else if(inputValue == "-"){
-        console.log("Minus Clicked");    
-        result = parseFloat(first - second);
+    else if(Value == "-"){   
+        result = substraction(first,second);
     }
-
-    else if(inputValue == "*"){
-        console.log("multiplication Clicked");   
-        result = parseFloat(first * second);
+    else if(Value == "*"){  
+        result = multiplication(first,second);;
     }
-    else if(inputValue == "/"){
-        console.log("divison Clicked");  
-        result = parseFloat(first / second);
+    else if(Value == "/"){  
+        result = divison(first,second);;
     }
-
+    
     document.getElementById("result").value = result;   
 }
-function clear_all(){
-    console.log("Clear has been clicked");
 
+function addition(firstNum,secondNum){
+    return firstNum + secondNum;
+}
+
+function substraction(firstNum,secondNum){
+    return firstNum - secondNum;
+}
+
+function multiplication(firstNum,secondNum){
+    return firstNum * secondNum;
+}
+
+function divison(firstNum,secondNum){
+    return firstNum / secondNum;
+}
+
+function clear_all(){
     document.getElementById("first_number").value="";
     document.getElementById("second_number").value="";
     document.getElementById("result").value="";
-    console.clear();
 }
 
 

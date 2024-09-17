@@ -11,16 +11,16 @@
    
 <div class="container"> 
      <label>Enter the First Number:</label>
-     <input type="text" id="first_number">
+     <input type="number" id="first_number" required>
 
      <label>Enter the Second Number:</label>
-     <input type="text" id="second_number">
+     <input type="number" id="second_number" required>
      
      <div>
-        <button class="button" id="plus" onclick="calculator('+');">+</button>
-        <button class="button" id="minus" onclick="calculator('-');">-</button>
-        <button class="button" id="multiplication" onclick="calculator('*');">*</button>
-        <button class="button" id="divison" onclick="calculator('/');">/</button>
+        <button class="button" onclick="calculator('+');">+</button>
+        <button class="button" onclick="calculator('-');">-</button>
+        <button class="button" onclick="calculator('*');">*</button>
+        <button class="button" onclick="calculator('/');">/</button>
     </div>
 
     <label>Result</label>
